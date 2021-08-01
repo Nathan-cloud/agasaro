@@ -71,11 +71,11 @@
               <ul class="nav navbar-nav">
                 <li><a href="about.html">About</a></li>
                 <li><a href="academics.html">Academics</a></li>
-                <li><a href="events.html">Events</a></li>
+                <li><a href="library.html">library</a></li>
                 <li><a href="schedule.html">Schedule</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="sign-in.html">library</a></li>
+                <li class="active"><a href="sign-in.html">library</a></li>
                 <li><a href="https://agasaro.devslab.io/">Online class</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right"></ul>
@@ -84,54 +84,175 @@
         </div>
       </div>
     </header>
-    <section class="sign-in-hero">
+
+    <section class="excursions-hero">
       <div class="container">
         <div class="hero-content">
           <div class="hero-caption">
-            <h2>Welcome Back!</h2>
+            <h2>Our Books</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <br />
-              sed diam nonummy nibh euismod
+              Lorem ipsum dolor sit amet, consectetuer adipiscing <br />elit,
+              sed diam nonummy nibh
             </p>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="sign-in-form">
+    <section class="events-search-filter">
       <div class="container">
-        <div class="section-content">
-          <h3>Please Fill The Form Below</h3>
-          <form action="library.html">
-            <div class="form-group">
-              <label>Username</label>
-              <input
-                type="text"
-                class="form-control"
-                name="username"
-                placeholder=""
-                required
-              />
+        <div class="row">
+          <div class="section-content clearfix">
+            <div class="col-sm-6 col-md-6">
+              <label>Keyword</label>
+              <input type="text" placeholder="Type book name here" />
             </div>
-            <div class="form-group">
-              <label>Password</label>
-              <input
-                type="password"
-                class="form-control"
-                placeholder=""
-                name="pswd"
-                required
-              />
-              <a href="#" class="forgot-password">Forget Password?</a>
+
+            <!-- <div class="col-sm-6 col-md-3">
+              <label>Book Categories</label>
+              <select class="selectpicker dropdown">
+                <option>Select Categories</option>
+                <option>Academics</option>
+                <option>Social Studies</option>
+                <option>Math</option>
+                <option>Science</option>
+              </select>
+            </div> -->
+            <div class="col-sm-6 col-md-6">
+              <label></label>
+              <input class="hvr-push" type="submit" value="Search Event" />
             </div>
-            <div class="checkbox">
-              <label> <input type="checkbox" /> Keep me logged in </label>
-            </div>
-            <input class="hvr-push" type="submit" value="Log in" />
-          </form>
+          </div>
         </div>
       </div>
     </section>
+
+    <section class="excursions-list">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-lg-2">
+            <div class="excursions-item">
+              <div class="excursions-item-img">
+                <a href="library-single.html">
+                  <img src="images/excursions-img-1.jpg" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="excursions-item-info">
+              <div class="excursions-meta">
+                <div class="col-xs-12">
+                  <h3 class="excursion-title">
+                    <a href="library-single.html">English Grammar</a>
+                  </h3>
+                </div>
+              </div>
+              <p>By John Doe</p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-2">
+            <div class="excursions-item">
+              <div class="excursions-item-img">
+                <a href="library-single.html">
+                  <img src="images/excursions-img-2.jpg" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="excursions-item-info">
+              <div class="excursions-meta">
+                <div class="col-xs-12">
+                  <h3 class="excursion-title">
+                    <a href="library-single.html">Social Studies</a>
+                  </h3>
+                </div>
+              </div>
+              <p>By John Doe</p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-2">
+            <div class="excursions-item">
+              <div class="excursions-item-img">
+                <a href="library-single.html">
+                  <img src="images/excursions-img-3.jpg" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="excursions-item-info">
+              <div class="excursions-meta">
+                <div class="col-xs-12">
+                  <h3 class="excursion-title">
+                    <a href="library-single.html">Math</a>
+                  </h3>
+                </div>
+              </div>
+              <p>By John Doe</p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-2">
+            <div class="excursions-item">
+              <div class="excursions-item-img">
+                <a href="library-single.html">
+                  <img src="images/excursions-img-4.jpg" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="excursions-item-info">
+              <div class="excursions-meta">
+                <div class="col-xs-12">
+                  <h3 class="excursion-title">
+                    <a href="library-single.html">Science</a>
+                  </h3>
+                </div>
+              </div>
+              <p>By John Doe</p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-2">
+            <div class="excursions-item">
+              <div class="excursions-item-img">
+                <a href="library-single.html">
+                  <img src="images/excursions-img-1.jpg" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="excursions-item-info">
+              <div class="excursions-meta">
+                <div class="col-xs-12">
+                  <h3 class="excursion-title">
+                    <a href="library-single.html"> English Grammar</a>
+                  </h3>
+                </div>
+              </div>
+              <p>By John Doe</p>
+            </div>
+          </div>
+          <div class="col-xs-6 col-lg-2">
+            <div class="excursions-item">
+              <div class="excursions-item-img">
+                <a href="library-single.html">
+                  <img src="images/excursions-img-2.jpg" alt="image" />
+                </a>
+              </div>
+            </div>
+            <div class="excursions-item-info">
+              <div class="excursions-meta">
+                <div class="col-xs-12">
+                  <h3 class="excursion-title">
+                    <a href="library-single.html">Social Studies</a>
+                  </h3>
+                </div>
+              </div>
+              <p>By John Doe</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="excursions-load-more">
+          <span
+            >Load More <i class="fa fa-angle-down" aria-hidden="true"></i
+          ></span>
+        </a>
+      </div>
+    </section>
+
     <footer id="colophon" class="site-footer">
       <div class="footer-info">
         <div class="container">
@@ -148,12 +269,11 @@
                   <li><a href="contact.html">Contact Us</a></li>
                 </ul>
               </div>
-           
 
               <div class="footer-links">
                 <ul>
                   <li><a href="academics.html">Academic</a></li>
-                  <li><a href="events.html">Events</a></li>
+                  <li><a href="library.html">library</a></li>
                 </ul>
               </div>
               <div class="footer-links">

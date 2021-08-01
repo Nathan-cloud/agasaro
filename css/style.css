@@ -71,14 +71,14 @@ body {
   padding: 0 20px;
 }
 
-.site-header #site-navigation .nav li a {
+/* .site-header #site-navigation .nav li a {
   font-size: 13px;
   text-transform: uppercase;
   color: #fff;
   padding: 12px 19px 15px;
   background: none !important;
   position: relative;
-}
+} */
 
 .site-header #site-navigation .nav li a:before {
   content: '';
@@ -110,23 +110,6 @@ body {
 
 .featherlight .featherlight-content {
   min-width: 50%;
-}
-
-.search-lightbox input[type='text'] {
-  background: #fff url('../images/search.png') no-repeat scroll 10px center;
-  border: medium none;
-  color: #bababa;
-  font-family: 'Montserrat-Light';
-  font-size: 16px;
-  height: 50px;
-  line-height: 50px;
-  padding: 0 0 0 50px;
-  width: 100%;
-  padding: 0 50px;
-  border: none;
-  -webkit-box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .search-lightbox input[type='text']::-webkit-input-placeholder {
@@ -192,7 +175,7 @@ body {
   font-size: 13px;
   text-transform: uppercase;
   color: #004296;
-  padding: 36px 19px;
+  padding: 33px 14px;
   background: none !important;
   position: relative;
 }
@@ -4231,21 +4214,21 @@ blockquote {
 }
 
 .excursions-list .excursions-item {
-  border-radius: 5px;
   overflow: hidden;
   border: 1px solid #bababa;
   margin: 0 0 30px;
-  min-height: 500px;
+  min-height: 200px;
 }
-
+/* 
 .excursions-list .excursions-item .excursions-item-img {
   border-bottom: 1px solid #bababa;
-}
+  width:100%;
+  height:auto;
+} */
 
 .excursions-list .excursions-item .excursions-item-img img {
   width: 100%;
-  height: auto;
-  max-width: 100%;
+  height: 200px;
   display: block;
 }
 
@@ -4275,25 +4258,18 @@ blockquote {
   padding: 0 15px 0 10px;
 }
 
-.excursions-list .excursions-item .excursions-item-link {
+/* .excursions-list .excursions-item .excursions-item-link {
   padding: 0 15px 25px;
-}
+} */
 
 .excursions-list .excursion-title a {
-  font-size: 16px;
-  line-height: 23px;
-  color: #303030;
-  margin: 0;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 300;
+  color: #000;
+  margin-left: -15px;
+  margin-top: -20px;
   display: block;
-}
-
-.excursions-list .excursion-date {
-  font-size: 13px;
-  line-height: 13px;
-  font-family: 'Montserrat-Light';
-  color: #f58c04 !important;
-  text-align: center;
-  margin: 0;
 }
 
 .excursions-list .excursion-excerpt {
@@ -4378,7 +4354,7 @@ blockquote {
 
 .excursions-load-more span {
   background: #fff;
-  padding: 0 30px;
+  /* padding: 0 30px; */
   position: relative;
   z-index: 1;
 }
@@ -4389,7 +4365,7 @@ blockquote {
 
 .excursions-single-hero {
   position: relative;
-  background: url(../images/excursions-single-bg.jpg) no-repeat center center;
+  background: url(../images/excursions-bg.jpg) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -4440,11 +4416,10 @@ blockquote {
 }
 
 .excursions-single-list .excursions-item {
-  border-radius: 5px;
   overflow: hidden;
   border: 1px solid #bababa;
   margin: 0;
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .excursions-single-list .excursions-item .excursions-item-img {
@@ -4492,10 +4467,11 @@ blockquote {
 }
 
 .excursions-single-list .excursion-title a {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 23px;
-  color: #303030;
-  margin: 0;
+  color: #000;
+  font-weight: 300;
+  margin-left: -15px;
   display: block;
 }
 
