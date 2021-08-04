@@ -44,6 +44,14 @@
       );
   });
 
+  //page preloader
+  $('.wrapper').fadeOut(150);
+  $('.box-area')
+    .fadeOut(150)
+    .delay(5000, function () {
+      $(this).remove();
+    });
+  //eof wind
   $('.events-list .row > div').slice(0, 8).show();
   $('.excursions-list .row > div').slice(0, 8).show();
   $('.teachers-list .row > div').slice(0, 8).show();
