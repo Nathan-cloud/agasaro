@@ -11,15 +11,18 @@
       $('.home-count').each(function () {
         $(this)
           .prop('Counter', 0)
-          .animate({
-            Counter: $(this).text(),
-          }, {
-            duration: 4000,
-            easing: 'swing',
-            step: function (now) {
-              $(this).text(Math.ceil(now));
+          .animate(
+            {
+              Counter: $(this).text(),
             },
-          });
+            {
+              duration: 4000,
+              easing: 'swing',
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            }
+          );
       });
     }
   });
@@ -27,24 +30,30 @@
   $('.about-count').each(function () {
     $(this)
       .prop('Counter', 0)
-      .animate({
-        Counter: $(this).text(),
-      }, {
-        duration: 4000,
-        easing: 'swing',
-        step: function (now) {
-          $(this).text(Math.ceil(now));
+      .animate(
+        {
+          Counter: $(this).text(),
         },
-      });
+        {
+          duration: 4000,
+          easing: 'swing',
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          },
+        }
+      );
   });
 
   //page preloader
-  $('.bg').fadeOut(150);
-  $('.loader')
-    .fadeOut(150)
-    .delay(5000, function () {
+
+  //page preloader
+  $('.bg-loader').fadeOut(10);
+  $('.box-area')
+    .fadeOut(15000)
+    .delay(15000, function () {
       $(this).remove();
     });
+
   $('.events-list .row > div').slice(0, 8).show();
   $('.excursions-list .row > div').slice(0, 8).show();
   $('.teachers-list .row > div').slice(0, 8).show();
@@ -95,7 +104,8 @@
       if ($('.events-list .row > div:hidden').length == 0) {
         $('.events-load-more').fadeOut('slow');
       }
-      $('html,body').animate({
+      $('html,body').animate(
+        {
           scrollTop: $(this).offset().top - 600,
         },
         1500
@@ -107,7 +117,8 @@
       if ($('.excursions-list .row > div:hidden').length == 0) {
         $('.excursions-load-more').fadeOut('slow');
       }
-      $('html,body').animate({
+      $('html,body').animate(
+        {
           scrollTop: $(this).offset().top - 600,
         },
         1500
@@ -119,7 +130,8 @@
       if ($('.teachers-list .row > div:hidden').length == 0) {
         $('.teachers-load-more').fadeOut('slow');
       }
-      $('html,body').animate({
+      $('html,body').animate(
+        {
           scrollTop: $(this).offset().top - 600,
         },
         1500
@@ -131,7 +143,8 @@
       if ($('.gallery-list .container > .row:hidden').length == 0) {
         $('.gallery-load-more').fadeOut('slow');
       }
-      $('html,body').animate({
+      $('html,body').animate(
+        {
           scrollTop: $(this).offset().top - 200,
         },
         1500
@@ -143,7 +156,8 @@
       if ($('.academics-content .container > .row:hidden').length == 0) {
         $('.academics-load-more').fadeOut('slow');
       }
-      $('html,body').animate({
+      $('html,body').animate(
+        {
           scrollTop: $(this).offset().top - 1100,
         },
         1500
@@ -164,7 +178,8 @@
   $('.skillbar').each(function () {
     $(this)
       .find('.skillbar-bar')
-      .animate({
+      .animate(
+        {
           width: $(this).attr('data-percent'),
         },
         2000
