@@ -30,33 +30,33 @@
 /*--------------------------------------------------------------
 	preloader
 --------------------------------------------------------------*/
-.bg-loader{
-  position:fixed;
+.bg-loader {
+  position: fixed;
   z-index: 999999;
-  background:skyblue;
-  width:100%;
-  height:100%;
+  background: skyblue;
+  width: 100%;
+  height: 100%;
 }
-.wrapper{
+.wrapper {
   width: 200px;
   height: 200px;
   margin: 15% auto;
 }
 
-.box-area{
+.box-area {
   animation: animate 10s ease-in-out infinite;
   transform-style: preserve-3d;
   transform-origin: 100px 100px 0;
 }
 
-.box-area div{
+.box-area div {
   position: absolute;
   width: 200px;
   height: 200px;
   line-height: 200px;
 }
 
-.box-area .box1{
+.box-area .box1 {
   background-image: url(../images/favicon.png);
   -webkit-background-size: cover;
   background-size: cover;
@@ -64,7 +64,7 @@
   transform: translateZ(100px);
 }
 
-.box-area .box2{
+.box-area .box2 {
   background-image: url(../images/favicon.png);
   -webkit-background-size: cover;
   background-size: cover;
@@ -72,7 +72,7 @@
   transform: rotateY(90deg) translateZ(100px);
 }
 
-.box-area .box3{
+.box-area .box3 {
   background-image: url(../images/favicon.png);
   -webkit-background-size: cover;
   background-size: cover;
@@ -80,7 +80,7 @@
   transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
 }
 
-.box-area .box4{
+.box-area .box4 {
   background-image: url(../images/favicon.png);
   -webkit-background-size: cover;
   background-size: cover;
@@ -88,7 +88,7 @@
   transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
 }
 
-.box-area .box5{
+.box-area .box5 {
   background-image: url(../images/favicon.png);
   -webkit-background-size: cover;
   background-size: cover;
@@ -96,34 +96,34 @@
   transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
 }
 
-.box-area .box6{
+.box-area .box6 {
   background-image: url(../images/favicon.png);
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center center;
-  transform:rotateX(-90deg) translateZ(100px);
+  transform: rotateX(-90deg) translateZ(100px);
 }
 
 @keyframes animate {
-  from,to{
+  from,
+  to {
     transfrom: rotate(0deg) rotate(0deg) rotateZ(0deg);
   }
-  16%{
+  16% {
     transform: rotateY(-90deg);
   }
-  33%{
+  33% {
     transform: rotateY(-90deg) rotateZ(90deg);
   }
-  50%{
+  50% {
     transform: rotateY(-180deg) rotateZ(90deg);
   }
-  66%{
+  66% {
     transform: rotateY(-270deg) rotateX(90deg);
   }
-  83%{
+  83% {
     transform: rotateY(-90deg);
   }
-
 }
 /*--------------------------------------------------------------
 	Body
@@ -4078,13 +4078,44 @@ blockquote {
   margin: 0 0 30px;
   min-height: 200px;
 }
+.page-btn {
+  margin-top: 60%;
+  margin-left: 30%;
+}
+.page-btn span {
+  display: inline-block;
+  border: 1px solid #f5ab35;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+}
+.page-btn span:hover {
+  background: #f5ab35;
+  color: #fff;
+}
+/* Filtering */
+.filter-container {
+  width: 100%;
+}
 
-/* 
-.excursions-list .excursions-item .excursions-item-img {
-  border-bottom: 1px solid #bababa;
-  width:100%;
-  height:auto;
-} */
+.filter-container div {
+  width: 80%;
+  padding: 20px;
+  margin-left: 30px;
+  margin-top: -20px;
+}
+
+.filter-container h4 {
+  color: #044153;
+}
+
+.filter-container a {
+  text-decoration: none;
+  color: gray;
+}
 
 .excursions-list .excursions-item .excursions-item-img img {
   width: 100%;
@@ -4095,11 +4126,19 @@ blockquote {
 .excursions-list .excursions-item .excursions-item-info {
   padding: 20px;
 }
+.excursions-item-img p {
+  display: none;
+}
 
 .excursions-list .excursions-item .excursions-item-info .excursions-meta {
   margin: 0 -15px 30px;
   overflow: hidden;
   min-height: 69px;
+}
+.excursions-item:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 1px 5px black;
+  transition: 1.5s;
 }
 
 .excursions-list
