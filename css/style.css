@@ -92,10 +92,7 @@
     font-weight: 400;
     padding-bottom: 0.2rem;
   }
-  .carousel-caption .btn {
-    font-size: 90%;
-    padding: 4px 8px;
-  }
+
   .carousel-indicators {
     display: none;
   }
@@ -343,6 +340,7 @@ body {
   display: block;
   position: absolute;
   bottom: 0;
+  left: 100%;
   top: 0;
   width: 100%;
 }
@@ -370,7 +368,7 @@ body {
   position: relative;
 }
 
-.header-1 #site-navigation .nav li.active a:before {
+.header-1 #site-navigation .nav li .active a:before {
   content: "";
   display: block;
   height: 3px;
