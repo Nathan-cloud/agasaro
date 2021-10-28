@@ -43,19 +43,27 @@
   text-shadow: 1px 1px 15px #000;
   color: #fff;
 }
+.carousel-caption h2 {
+  font-size: 400%;
+  margin-top: 4em;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+  color: #fff;
+}
 .carousel-caption h3 {
   font-size: 200%;
   font-weight: 500;
 
   text-shadow: 1px 1px 1px 10px #000;
   padding-bottom: 1rem;
-  color: #fff;
+  color: #f5ab35;
 }
 @media (max-width: 768px) {
   .carousel-caption {
     top: 45%;
   }
-  .carousel-caption h1 {
+  .carousel-caption h1,
+  h2 {
     font-size: 350%;
   }
   .carousel-caption h3 {
@@ -75,7 +83,8 @@
   .carousel-caption {
     top: 40%;
   }
-  .carousel-caption h1 {
+  .carousel-caption h1,
+  h2 {
     font-size: 250%;
   }
   .carousel-caption h3 {
