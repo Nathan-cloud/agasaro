@@ -234,7 +234,8 @@ body {
   margin-top: 80px;
   margin-bottom: 60px;
   position: relative;
-  left: 180px;
+  left: 280px;
+  width: 100%;
 }
 
 .site-header .site-branding .site-title a img {
@@ -1100,6 +1101,10 @@ a.emger:hover #top-header {
 }
 
 @media (max-width: 768px) {
+  #collaboration {
+    position: relative;
+    left: 250px;
+  }
   #collaboration img {
     width: 20%;
     position: relative;
@@ -1134,11 +1139,16 @@ a.emger:hover #top-header {
     left: -50px;
   }
 }
+/* @media (max-width: 1200px) {
+  #collaboration {
+    width: 50%;
+  }
+} */
 @media (max-width: 1060px) {
   #collaboration img {
     width: 30%;
     position: relative;
-    left: -130px;
+    left: -230px;
   }
 }
 @media (max-width: 450px) {
