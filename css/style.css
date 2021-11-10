@@ -234,8 +234,12 @@ body {
   margin-top: 20px;
   padding: 0;
   position: relative;
-  left: 400px;
+  left: 415px;
   width: 100%;
+}
+#collaboration img {
+  position: relative;
+  left: 100px;
 }
 
 .site-header .site-branding .site-title a img {
@@ -1166,7 +1170,7 @@ a.emger:hover #top-header {
 
 @media (max-width: 1080px) {
   #collaboration img {
-    left: -340px;
+    left: -110px;
   }
 }
 @media (max-width: 450px) {
