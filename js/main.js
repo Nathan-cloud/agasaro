@@ -185,4 +185,18 @@
         2000
       );
   });
+  $(document).ready(function () {
+    const mq = window.matchMedia("(max-width: 1080px)");
+    if (mq.matches) {
+        $(".sub-btn").click(function () {
+            $(this).next(".sub-menu").slideToggle();
+        });
+
+        $(".more-btn").click(function () {
+            $(this).next(".more-menu").slideToggle();
+        });
+    }
+});
+
+
 })(jQuery);
