@@ -239,7 +239,13 @@ body {
 }
 #collaboration img {
   position: relative;
-  left: 40px;
+  left: 50px;
+}
+@media (max-width: 1200px) {
+  #collaboration img {
+    position: relative;
+    left: 160px;
+  }
 }
 
 .site-header .site-branding .site-title a img {
