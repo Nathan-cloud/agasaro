@@ -241,10 +241,10 @@ body {
   position: relative;
   left: 50px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1920px) {
   #collaboration img {
     position: relative;
-    left: 240px;
+    left: 290px;
   }
 }
 
