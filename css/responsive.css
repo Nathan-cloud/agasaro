@@ -1,8 +1,13 @@
 @media (max-width: 968px) {
   #collaboration img {
-    width: 20%;
+    width: 32%;
     position: relative;
-    left: -230px;
+    left: 300px;
+  }
+  .featured-box .box-1,
+  .featured-box .box-2,
+  .featured-box .box-3 {
+    height: 280px;
   }
 }
 @media (max-width: 768px) {
@@ -11,6 +16,15 @@
     position: relative;
     left: -130px;
   }
+  .featured-box .box-1,
+  .featured-box .box-2,
+  .featured-box .box-3 {
+    height: 280px;
+  }
+  #site-navigation .navbar-toggle,
+  .header-3 .site-branding .navbar-toggle {
+    left: 400%;
+  }
 }
 @media (max-width: 668px) {
   #collaboration img {
@@ -18,12 +32,23 @@
     position: relative;
     left: -240px;
   }
+  .featured-box .box-1,
+  .featured-box .box-2,
+  .featured-box .box-3 {
+    height: 280px;
+  }
 }
 @media (max-width: 468px) {
   #collaboration img {
     width: 110px;
     position: relative;
     left: -210px;
+  }
+
+  .featured-box .box-1,
+  .featured-box .box-2,
+  .featured-box .box-3 {
+    height: 280px;
   }
 }
 
@@ -156,7 +181,7 @@
 }
 
 /* 992px and 1200px */
-@media only screen and (min-width: 62px) and (max-width: 75em) {
+@media only screen and (min-width: 62px) and (max-width: ) {
   .navbar {
     min-height: auto;
   }
@@ -275,7 +300,16 @@
     margin: 0 0 30px;
   }
 }
-
+@media screen and (max-width: 48.56) {
+  #site-navigation .navbar-toggle,
+  .header-3 .site-branding .navbar-toggle {
+    border: 1px solid #104ea3;
+    margin: 6px 0;
+    position: relative;
+    left: 360%;
+    top: -13px;
+  }
+}
 /* width: 991px; */
 @media screen and (max-width: 61.938em) {
   #site-navigation {
@@ -407,10 +441,11 @@
 
   #site-navigation .navbar-toggle,
   .header-3 .site-branding .navbar-toggle {
-    border: 1px solid #fff;
+    border: 1px solid #104ea3;
     margin: 6px 0;
     position: relative;
-    left: 90%;
+    left: 130%;
+    top: -131px;
   }
   .header-1 {
     background: transparent;
@@ -418,7 +453,7 @@
 
   #site-navigation .navbar-toggle .icon-bar,
   .header-3 .site-branding .navbar-toggle .icon-bar {
-    background: #fff;
+    background: #104ea3;
     transform: none !important;
     opacity: 1 !important;
   }
