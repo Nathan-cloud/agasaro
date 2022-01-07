@@ -5127,6 +5127,7 @@ button.bg-dark:focus {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

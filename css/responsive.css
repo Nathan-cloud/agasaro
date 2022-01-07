@@ -312,6 +312,9 @@
 }
 /* width: 991px; */
 @media screen and (max-width: 61.938em) {
+  body {
+    width: 100%;
+  }
   #site-navigation {
     padding: 0 !important;
   }
