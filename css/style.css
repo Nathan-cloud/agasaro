@@ -967,9 +967,9 @@ body {
 	Announcement
 --------------------------------------------------------------*/
 #announ {
-  position: fixed;
+  position: sticky;
   float: left;
-  z-index: 99999;
+  z-index: 999;
   width: 20%;
 }
 
@@ -1143,10 +1143,10 @@ a.emger:hover #top-header {
 }
 
 @media (max-width: 768px) {
-  #collaboration {
+  /* #collaboration {
     position: relative;
     left: 250px;
-  }
+  } */
 
   #emergency-response-opt p span {
     color: #114c98;

@@ -42,7 +42,7 @@
   #collaboration img {
     width: 110px;
     position: relative;
-    left: -210px;
+    left: 110px;
   }
 
   .featured-box .box-1,
@@ -312,9 +312,6 @@
 }
 /* width: 991px; */
 @media screen and (max-width: 61.938em) {
-  body {
-    width: 100%;
-  }
   #site-navigation {
     padding: 0 !important;
   }
