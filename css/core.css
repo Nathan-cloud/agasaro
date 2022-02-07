@@ -34,24 +34,7 @@
   src: url("fonts/Montserrat-Bold.otf");
 }
 
-html, body, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-}
+
 
 body,
 button,
@@ -994,91 +977,7 @@ img.aligncenter {
 /*************************************
  Header
  *************************************/
-@media (min-width: 992px) {
-    .page .container-header {
-        box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.15);
-    }
-}
-.page .header-wrapper {
-  float: left;
-  position: relative;
-  width: 100%;
-  z-index: 2;
-}
 
-.page .logo a img {
-  box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.15);
-}
-
-.header-wrapper h1.site-title{
-    width:500px;
-}
-
-.header-wrapper .site-title a{
-  color:#c0c6da;
-  font-size:20pt;
-  margin-top:3px;
-  letter-spacing:0.1em;
-  text-overflow: ellipsis;
-  height:25px;
-}
-
-.container-header {
-  position: relative;
- /* height: 104px; */
-}
-
-@media (min-width: 992px) {
-  .header-position {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    float: left;
-    width: 100%;
-    background-color: #fff;
-  }
-}
-/* Top Bar Navigation */
-.top-nav {
-  background-color: #1a265c;
-  height: 37px;
-}
-.top-nav .top-right {
-  text-align: right;
-}
-.top-nav ul .top-search .navbar-form .form-control {
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-  max-width: 70px;
-  font-size: 12px;
-  font-family: "Montserrat-Light";
-  display: inline-block;
-  width: auto;
-  vertical-align: middle;
-}
-.top-nav ul .top-search .navbar-form button {
-  font-size: 16px;
-  margin-top: 9px;
-  float: right;
-}
-.top-nav ul .top-search .navbar-form .form-control, .top-nav ul .top-search .navbar-form button {
-  background-color: transparent !important;
-  border: none;
-  border-radius: 0;
-  color: #fff;
-}
-.top-nav ul .top-search .navbar-form:hover .form-control {
-  max-width: 120px;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
 .top-nav ul .login {
   float: right;
   margin-left: 15px;
@@ -1123,110 +1022,6 @@ img.aligncenter {
 
 /* Logo */
 
-@media (min-width: 992px) {
-  .logo {
-    position: absolute;
-    display: inline-block;
-    width: 224px;
-    z-index: 10;
-  }
-  .logo a {
-    display: block;
-  }
-  .logo a img {
-    box-shadow: 2px 11px 16px rgba(0, 0, 0, 0.8);
-  }
-}
-@media (max-width: 991px) {
-  .logo-mobile {
-    float: left;
-    width: 150px;
-    position: absolute;
-    top: 6px;
-    left: 15px;
-    z-index: 9999;
-  }
-  .logo-mobile a {
-    display: block;
-  }
-  .logo-mobile img {
-    max-width: 100%;
-  }
-}
-/* Search page */
-.content_search > .hentry {
-    margin-bottom: 38px;
-}
-.content_search p, .not-found p{
-    margin: 0 0 16px;
-}
-/* Search page: No result search */
-.no-results .search-form {
-    max-width: 400px;
-    width: 100%;
-    position: relative;
-}
-.no-results{
-    padding-bottom: 70px;
-}
-.search-form-group {
-    position: relative;
-}
-.search-form-text {
-    border: 1px solid #e7ebee;
-    color: #444444;
-    padding: 11px 54px 11px 13px;
-    width: 100%;
-    -webkit-appearance: none;
-    border-radius: 0;
-}
-.search-form-text:focus {
-    outline: none;
-}
-.entry-title {
-    line-height: normal;
-    margin: 0 0 14px 0;
-    border-bottom: 1px solid #e5e7e8;
-    padding-bottom: 6px;
-    
-}
-
-.search-form-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    padding: 0;
-    height: 44px;
-    width: 44px;
-    line-height: 44px;
-    font-size: 14px;
-    text-align: center;
-    background: transparent;
-}
-.hentry > *:last-child {
-    margin-bottom: 0;
-}
-.post__meta-list_inline {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.post__meta-list_inline .post__meta-item {
-    display: inline-block;
-    margin-right: 20px;
-}
-.post__meta-item {
-    position: relative;
-    font-size: 13px;
-    padding-left: 0px;
-    color: #888888;
-    margin-right: 45px;
-}
-.post__meta-item .fa{
-    margin-right: 8px;
-    /* color: #f7ca18; */
-}
 
 /* Menu */
 

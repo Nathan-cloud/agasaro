@@ -5067,13 +5067,6 @@ button.bg-dark:focus {
   background-position: center center;
 }
 
-@media (max-width: 991.98px) {
-  .btn {
-    display: block;
-    width: 100%;
-  }
-}
-
 .owl-carousel {
   position: relative;
 }
